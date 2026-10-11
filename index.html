@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Zynpixa fixes photo capture dates on-device. Change EXIF date and time, inspect metadata, save corrected copies. No uploads." />
+  <meta name="theme-color" content="#2563EB" />
+  <title>Zynpixa – Photo Date Editor</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Zynpixa – Photo Date Editor" />
+  <meta property="og:description" content="Fix photo capture dates on-device. No uploads, no account." />
+  <meta property="og:image" content="feature.png" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="icon.png" alt="" />
+      Zynpixa
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-to">How to use</a>
+      <a href="#limits">Limits</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <img src="icon.png" alt="Zynpixa app icon" class="hero-logo" />
+    <span class="hero-badge"><span class="dot" aria-hidden="true"></span>On-device · No uploads</span>
+    <h1>Give your photo library its timeline back.</h1>
+    <p class="hero-tagline">Zynpixa fixes photo capture dates on your Android device — scanned prints, wrong-clock cameras, screenshots with the wrong timestamp. Save corrected copies, keep the originals.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#how-to">See how it works</a>
+      <a class="btn btn-outline" href="privacy.html">Read privacy policy</a>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="section-wide">
+    <div class="section-head">
+      <div class="section-eyebrow">Features</div>
+      <h2>Everything you need to fix photo dates</h2>
+      <p>Simple photo tools built around a single idea: do one job well, keep your originals safe, never upload anything.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon primary">✎</div>
+        <h3>Change capture date</h3>
+        <p>Pick one or many photos. Choose <em>Now</em> or a custom date and time. One tap on <em>Apply</em> writes the new EXIF capture date to every photo in the batch.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon tertiary">ℹ</div>
+        <h3>Inspect EXIF metadata</h3>
+        <p>Capture / digitized dates, GPS presence (never coordinates), dimensions, orientation, camera make and model, file name, MIME type, size.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon success">✓</div>
+        <h3>Save as New (default)</h3>
+        <p>Corrected copies go to <code>Pictures/Zynpixa</code>. Your originals stay unchanged. If something fails, nothing was written.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon secondary">↻</div>
+        <h3>Update Original</h3>
+        <p>Where Android allows it, rewrite the photo in place — only after an explicit confirmation. Clearly disabled when the system cannot grant write access.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon primary">⚡</div>
+        <h3>Batch processing</h3>
+        <p>Progress circle, per-item status (Saved / Failed / Skipped), retry failed items, open or share saved copies without leaving the app.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon tertiary">⌂</div>
+        <h3>Works offline</h3>
+        <p>Picking, metadata, editing and saving never need a network. The only network use is the optional rewarded ad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-to" style="background: var(--surface-variant);">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">How to use</div>
+      <h2>Four steps from pick to saved</h2>
+      <p>No account, no sign-in, no setup. Open the app and go.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Pick photos</h3>
+          <p>Tap <strong>Select Photos</strong> on Home. The Android system photo picker opens. Choose one or many photos — Zynpixa only sees what you pick.</p>
+          <div class="tip">💡 Prefer <em>View EXIF</em> on Home to inspect a single photo without starting an edit.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Review the selection</h3>
+          <p>Zynpixa shows the chosen photos with file names. Remove any one, add more through the picker, or <strong>Clear all</strong> to start over.</p>
+          <p>Tap any thumbnail to open the EXIF viewer for that photo.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Choose a new date</h3>
+          <p>In the Date Editor, pick <strong>Now</strong> (resolved when you tap Apply) or <strong>Choose Date &amp; Time</strong> (opens the native date and time pickers).</p>
+          <p>The time zone shown is your device zone. Save mode defaults to <strong>Save as New</strong>; <em>Update Original</em> is shown when supported, with a clear warning.</p>
+          <div class="tip">💡 <em>Save as New</em> means your originals stay unchanged. Copies are written to <code>Pictures/Zynpixa</code>.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div>
+          <h3>Apply and review results</h3>
+          <p>Tap <strong>Apply to N photos</strong>. A progress hero shows the running count. The results screen lists every photo with Saved / Failed / Skipped status.</p>
+          <p>Open or share any saved copy, <strong>Retry failed</strong> items, or tap <strong>View saved photos</strong> to jump to the output folder.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credits">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">Edit credits</div>
+      <h2>Three free edits per day. No subscription.</h2>
+      <p>Zynpixa is free. Processing a batch consumes one credit per successful photo. Failed or skipped items consume nothing.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon success">3</div>
+        <h3>Free daily quota</h3>
+        <p>Three successful edits per local day. The counter resets at local midnight.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon secondary">+10</div>
+        <h3>Rewarded ad credits</h3>
+        <p>Need more that day? Watch a short rewarded ad to earn +10 edit credits. Bonus credits never expire.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon primary">⌧</div>
+        <h3>No forced ads</h3>
+        <p>Ads are opt-in and only requested after consent. The <em>Not now</em> button is always one tap away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="limits" style="background: var(--surface-variant);">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">Honest limits</div>
+      <h2>What Zynpixa can and cannot promise</h2>
+      <p>No fraud-resistance guarantees, no "works everywhere" claims. These are the things the app itself tells you.</p>
+    </div>
+    <div class="limits">
+      <h3>Known limitations</h3>
+      <ul>
+        <li><strong>JPEG only.</strong> Other formats can be inspected but are never converted. Non-JPEG items are reported as skipped and consume zero credits.</li>
+        <li><strong>Picker redacts GPS.</strong> Android hides GPS values for photos shared through the photo picker, so a saved copy can only keep the location data the app is given.</li>
+        <li><strong>Gallery sorting is not guaranteed.</strong> Saving a copy adds a new gallery item with its own date fields; some gallery apps sort by a different date and may not reflect the edit.</li>
+        <li><strong>Update Original has no atomic rollback.</strong> Best-effort backup/restore only. It is unavailable for photos chosen through the system picker — Save as New is used there.</li>
+        <li><strong>The daily quota is a local control, not fraud protection.</strong> Changing the device clock, reinstalling the app or clearing app data bypasses it.</li>
+        <li><strong>Cloud-backed photos.</strong> Android cannot guarantee every cloud-backed URI can be read or saved; failed items show an honest error.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 20px;">
+  <div class="section-inner">
+    <div class="highlight-strip">
+      <h2>Your photos stay on your device.</h2>
+      <p>Zynpixa processes everything locally. No account, no cloud sync, no uploads. Ads come from Google AdMob with the consent flow Android requires.</p>
+      <a class="btn" href="privacy.html">Read the full privacy policy</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="icon.png" alt="" />
+      Zynpixa – Photo Tools
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="#how-to">How to use</a>
+      <a href="#limits">Limits</a>
+    </nav>
+  </div>
+  <div style="max-width: var(--max-width); margin: 24px auto 0; text-align: center;">
+    © <span id="year">2026</span> Zynpixa. Published by Theo Duong.
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
